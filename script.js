@@ -25,10 +25,10 @@ class Cat extends Animal {
 	}
 }
 
-let fluffy =new Cat("Cat")
-console.log(fluffy.species)
-fluffy.makeSound()
-fluffy.purr()
+// let fluffy =new Cat("Cat")
+// console.log(fluffy.species)
+// fluffy.makeSound()
+// fluffy.purr()
 
 // Do not change the code below this line
 window.Animal = Animal;
