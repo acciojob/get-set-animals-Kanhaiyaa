@@ -25,10 +25,19 @@ class Cat extends Animal {
 	}
 }
 
-// let fluffy =new Cat("Cat")
-// console.log(fluffy.species)
-// fluffy.makeSound()
-// fluffy.purr()
+const genericAnimal = new Animal("Unknown");
+console.log(genericAnimal.species); // Output: Unknown
+genericAnimal.makeSound(); // Output: Generic animal sound
+
+const fluffy = new Cat("Cat");
+console.log(fluffy.species); // Output: Cat
+fluffy.makeSound(); // Output: Generic animal sound
+fluffy.purr(); // Output: purr
+
+const rover = new Dog("Dog");
+console.log(rover.species); // Output: Dog
+rover.makeSound(); // Output: Generic animal sound
+rover.bark(); // Output: woof
 
 // Do not change the code below this line
 window.Animal = Animal;
